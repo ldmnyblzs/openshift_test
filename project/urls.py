@@ -8,7 +8,7 @@ urlpatterns = [
     path("", index, name="index"),
     path("health", health, name="health"),
     path("admin/", admin.site.urls),
-    path("hello", hello),
+    path("hello", hello, name="hello"),
 ]
 
 if settings.DEBUG:
